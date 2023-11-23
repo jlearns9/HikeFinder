@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HikeFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="explore-page">
+        <aside class="hidden overlay"></aside>
+        <nav class="flex">
+            <div class="nav__branding flex">
+                <div class="nav__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31" fill="none">
+                        <path d="M19.6769 0L39.3156 30.1645H0.0381222L19.6769 0Z" fill="#2E2E2E"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31" fill="none">
+                        <path d="M20.3232 0L39.9619 30.1645H0.684423L20.3232 0Z" fill="#638A5C"/>
+                    </svg>
+                </div>
+                <div class="nav__title">HikeFinder</div>
+            </div>
+            <i class="nav__sidebar-icon fa-solid fa-bars"></i>
+            <ul class="nav__sidebar">
+                <button class="nav__sidebar-close flex">x</button>
+                <div class="nav__sidebar-links flex">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../explore.html">EXPLORE</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                </div>
+            </ul>
+            <ul class="nav__links hidden">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../explore.html">EXPLORE</a></li>
+                <li><a class="signup" href="#">SIGN UP</a></li>
+                <li><a class="login" href="#">LOG IN</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="hero-overlay flex">
+                <h1>Find Your Next <span class="yellow-text">Adventure</span></h1>
+                <p>Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.</p>
+            </div>
+        </main>
+        <section class="curated-trails-container">
+            <h2 class="article-title">Explore Curated Trails Near You</h2>
+            <div class="trail-areas">
+                <div class="curated-trails"></div>
+                <img class="map hidden" src="./images/map.png" alt="map">
+            </div>
+        </section>
+        <section class="community-engagement-container flex">
+            <ul>
+                <li>
+                    <img src="./images/icon-bell.png" alt="bell-icon">
+                    <h4>Sign up for Notifications</h4>
+                    <p><span class="green-text">Sign up</span> to get conditions alerts, information on pop-up events and interesting stories.</p>
+                </li>
+                <li>
+                    <img src="./images/icon-location.png" alt="location-icon">
+                    <h4>Get the HikeFinder App</h4>
+                    <p><span class="green-text">Download the</span> app to get the most out of every minute outdoors with offline maps and more!</p>
+                </li>
+                <li>
+                    <img src="./images/icon-share.png" alt="share-icon">
+                    <h4>Share Trails</h4>
+                    <p><span class="green-text">Share your hiking adventures</span> with the community and keep a record of your travels.</p>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <ul class="flex">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a class="signup" href="#">SIGN UP</a></li>
+                <li><a class="login" href="#">LOG IN</a></li>
+            </ul>
+            <div class="website-details">
+                <div class="title-logo-container flex">
+                    <div class="logo-overlap">
+                        <img src="./images/polygon-1.png" alt="website-logo">
+                        <img src="./images/polygon-2.png" alt="website-logo">
+                    </div>
+                    <h2>HikeFinder</h2>
+                </div>
+                <p>Copyright 2022. HikeFinder</p>
+            </div>
+        </footer>
+    </body>
+    <script type='module' src='index.js'></script>
+</html>
